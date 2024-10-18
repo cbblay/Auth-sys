@@ -1,0 +1,39 @@
+Documentation
+1. Overview
+This zip file contains a simple authentication system built using PHP. The system includes functionality for user login, registration, and session management. The includes folder contains reusable components like the header and footer for the webpages.
+
+2. Contents
+config.php: Configuration file that likely includes database connection settings or other global settings for the application.
+
+index.php: The main landing page, which could display user information or redirect to login depending on the user's authentication state.
+
+info.php: This file may contain details about the user or application.
+
+login.php: Handles the login functionality where users can authenticate themselves.
+
+logout.php: Manages user logout, clearing session data and redirecting the user to the login page.
+
+register.php: Allows new users to create an account by providing necessary details.
+
+includes/header.php: Common header used across different pages for consistent layout or design.
+
+includes/footer.php: Common footer used across different pages for consistent layout or design.
+
+3. Installation Instructions
+Extract the Zip: Unzip the contents into your web server’s root directory (e.g., /var/www/html/ for Apache).
+
+Database Setup:
+
+Open config.php and configure it with your database credentials (username, password, database name, etc.).
+Import any associated database files (if provided) into your database management system (e.g., MySQL).
+Run the Application:
+
+Open a web browser and navigate to the extracted directory (e.g., http://localhost/auth-sys/).
+Register a new user or log in using existing credentials.
+4. Usage
+User Registration: Navigate to register.php to create a new user account.
+Login: Use login.php to sign into the system.
+Session Management: Once logged in, sessions will keep the user authenticated, with an option to log out via logout.php.
+5. Dependencies
+A web server with PHP installed (e.g., Apache or Nginx with PHP).
+A MySQL or other compatible database for storing user credentials and session information.
